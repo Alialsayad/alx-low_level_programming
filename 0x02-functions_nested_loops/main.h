@@ -1,7 +1,7 @@
 #ifndef main_h
 #define main_h
 
-#include <sdtio.h>
+#include "main.h"
 
 int _putchar(char);
 void print_alphabet(void);
