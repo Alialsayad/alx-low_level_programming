@@ -2,16 +2,17 @@
 
 
 /**
- * add - Adds two values
- * @n1: The first number to be computed
- * @n2: The second number to be computed
- * Return: Integer value
+ * add - add two integers
+ *
+ * @a: first input
+ * @b: second input
+ *
+ * Return: sum of a & b
 */
 
-int add(int n1; int n2)
-
+int add(int a, int b)
 {
+	int sum = a + b;
 
-	return (n1 + n2);
-
+	return (sum);
 }
