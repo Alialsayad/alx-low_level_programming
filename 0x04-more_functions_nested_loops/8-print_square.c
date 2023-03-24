@@ -1,31 +1,28 @@
-#include <stdio.h>
-#include <main.h>
+#include "holberton.h"
 
 /**
- * main - entry point
- *
- * Description: prints the numbers 1 - 100 w/
- * Fizz for multiples of 3, Buzz for multiples of 5,
- * and FizzBuzz for multiples of both
- * Return: Always 0
-*/
-int main(void)
+ * print_square - a function that prints a square, followed by a new line
+ * @size: size of both width and length
+ * Return: a square made of '#'
+ */
+void print_square(int size)
 {
-	int i;
+	int co, ro;
 
-	for (i = 1; i <= 100; i++)
+	if (size <= 0)
 	{
-		if (i % 15 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Buzz");
-		else
-			printf("%i", i);
-		if (i < 100)
-			printf(' ');
+		_putchar('\n');
 	}
-	printf("\n");
-	return (0);
+	else
+	{
+		for (co = 1; co <= size; co++)
+		{
+			_putchar('#');
+			for (ro = 2; ro <= size; ro++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
 }
