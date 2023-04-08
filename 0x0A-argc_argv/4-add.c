@@ -4,7 +4,7 @@
 /**
  * main - adds positive numbers
  * @argv: int
- * @argc: argument count
+ * @argc: argument vector
  *
  * Return: 0
  */
