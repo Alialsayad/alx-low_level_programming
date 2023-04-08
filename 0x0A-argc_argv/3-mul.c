@@ -4,26 +4,23 @@
  * main - Program that takes first two integer arguments and prints the product
  * @argc: int
  * @argv: Array name
- * Return: 1 if not enough arguments passed in, 0 otherwise
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int a1 = 0, a2 = 0;
 
-	if (argc == 1 || argc == 2)
+	if (argc == 3)
 	{
-		printf("Error\n");
-		return (1);
+		a1 = atoi(argv[1]);
+		a2 = atoi(argv[2]);
+		printf("%d\n", a1 * a2);
 	}
 	else
 	{
-		b = 1;
-
-		for (a = 1; a < 3; a++)
-			b *= atoi(argv[a]);
-
-		printf("%d\n", b);
+		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
