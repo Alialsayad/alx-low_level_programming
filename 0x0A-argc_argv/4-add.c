@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - adds positive numbers
+ * main - prints the num of args positive numbers
  * @argv: int
  * @argc: argument vector
  *
