@@ -1,6 +1,6 @@
 #include "dog.h"
 /**
- * init_dog - Entry point
+ * init_dog - initializes a dog
  * @d: the dog to init
  * @name: name of dog
  * @age: age of dog
