@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * add_nodeint_ind -adds anode to the bottom
  * @head: pointer to first node
