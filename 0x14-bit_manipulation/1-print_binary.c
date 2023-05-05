@@ -1,25 +1,20 @@
 #include "main.h"
-
 /**
- * ptint_binary - prints a number as binary string
- * @n: the number to print
- *
+ * print_binary - prints the binary representation
+ * of a number
+ * @n: unsigned long int
  * Return: void
-*/
+ */
 void print_binary(unsigned long int n)
 {
-	int all = sizeof(n) * 8, printed = 0;
-
-	while (all)
+	if (n >> 0)
 	{
-		if (n & 1L << --all)
-		{
-			_putchar('1');
-			printed++;
-		}
-		else if (printed)
-			_putchar('0');
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
-	if (!printed)
+	else
+	{
 		_putchar('0');
+	}
 }
