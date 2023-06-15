@@ -1,23 +1,22 @@
 #include "lists.h"
 
 /**
- * dlistint_len - returns the number of all in a doubly linked list
+ * dlistint_len - function that returns number of elements in a list.
  * @h: pointer to the list
- *
- * Return: number of all
+ * Return: number of nodes
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t all = 0;
+	size_t al;
+	const dlistint_t *temp;
 
-	if (!h)
+	if (h == NULL)
 		return (0);
+	temp = h;
 
-	while (h)
+	for (al = 0; temp != NULL; al++)
 	{
-		nodes++;
-		h = h->next;
+		temp = temp->next;
 	}
-
-	return (all);
+	return (al);
 }
